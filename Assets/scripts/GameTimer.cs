@@ -12,7 +12,6 @@ public class GameTimer : MonoBehaviour
 	}
 
 	void Update(){
-		print ("hi");
 		elapsedTime += Time.deltaTime;
 	}
 

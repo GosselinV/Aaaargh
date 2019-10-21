@@ -15,7 +15,8 @@ public class Ship : MonoBehaviour {
 	//Rotation support.
 	const float RotateDegreePerSecond = 60;
 
-	void Start(){
+    
+    void Start(){
 		shipRb2D = GetComponent<Rigidbody2D> ();
 	}
 
@@ -30,7 +31,6 @@ public class Ship : MonoBehaviour {
 	// OnBecameInvisible is called when the gameobject is no longer visible by any camera.
 	// We use this to wrap our world in a donut shape. 
 	void OnBecameInvisible(){
-        Debug.Log("save me");
 		Vector3 position = transform.position;
 		if (position.x >= ScreenUtils.ScreenRight) {
 			position.x = ScreenUtils.ScreenLeft;
@@ -69,6 +69,7 @@ public class Ship : MonoBehaviour {
 		GameObject explosion = (GameObject)Instantiate (Resources.Load ("prefabs/explosion"));
 		explosion.transform.position = transform.position - new Vector3(0, 0.5f, 0);
 		AudioManager.Play (AudioClipName.ShipWreck);
+        GameObject.Instantiate(Resources.Load("prefabs/BackCanvas"));
 		Destroy (gameObject); 
 	}
 

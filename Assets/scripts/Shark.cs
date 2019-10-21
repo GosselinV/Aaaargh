@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Shark : MonoBehaviour {
 
@@ -65,6 +66,7 @@ public class Shark : MonoBehaviour {
 		if (col.gameObject.tag == "cannonball") {
 			Destroy (col.gameObject);
 			ResolveCannon ();
+            EndGame();
 			Destroy (gameObject);
 		} else if (col.gameObject.tag == "ship") {
 			AudioManager.Play (AudioClipName.ShipWreck);
@@ -81,10 +83,7 @@ public class Shark : MonoBehaviour {
 	void ResolveCannon()
 	{
 		List<Vector2> velocity = getNewVelocity ();
-		print (velocity[0]);
-		print (velocity [1]);
 		Camera cam = Camera.main;
-		print (SpriteName);
 		if (SpriteName == SharkSpriteName.shark1) {
 			AudioManager.Play (AudioClipName.SharkSplit);
 			cam.GetComponent<SharkSpawner> ().SpawnShark (getNewLocation (velocity [0]), SharkSpriteName.halfShark1, velocity [0]);
@@ -127,6 +126,15 @@ public class Shark : MonoBehaviour {
 	    return transform.position + gameObject.GetComponent<CircleCollider2D> ().radius * direction.normalized;
 
 	}
+     void EndGame()
+    {
+        Debug.Log(GameObject.FindGameObjectsWithTag("shark").Length.ToString());
+        if (GameObject.FindGameObjectsWithTag("shark").Length == 1)
+        { 
+            GameObject.FindGameObjectWithTag("backButton").GetComponent<Image>().enabled = true;
+        }
+    }
+
 
 	#endregion
 }
