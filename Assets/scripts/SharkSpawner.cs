@@ -25,9 +25,9 @@ public class SharkSpawner : MonoBehaviour {
 		Destroy (sharkPrefab);
 
 		List<Vector3> sharkSpawnLocations = new List<Vector3> ();
-		//sharkSpawnLocations.Add (new Vector3 (Random.Range(ScreenUtils.ScreenRight ,ScreenUtils.ScreenLeft), ScreenUtils.ScreenBottom, cameraMainTransformZ));
-	    //sharkSpawnLocations.Add (new Vector3 (ScreenUtils.ScreenRight, Random.Range(ScreenUtils.ScreenBottom, ScreenUtils.ScreenTop), cameraMainTransformZ));
-		//sharkSpawnLocations.Add (new Vector3 (ScreenUtils.ScreenLeft, Random.Range(ScreenUtils.ScreenBottom, ScreenUtils.ScreenTop), cameraMainTransformZ));
+		sharkSpawnLocations.Add (new Vector3 (Random.Range(ScreenUtils.ScreenRight ,ScreenUtils.ScreenLeft), ScreenUtils.ScreenBottom, cameraMainTransformZ));
+	    sharkSpawnLocations.Add (new Vector3 (ScreenUtils.ScreenRight, Random.Range(ScreenUtils.ScreenBottom, ScreenUtils.ScreenTop), cameraMainTransformZ));
+		sharkSpawnLocations.Add (new Vector3 (ScreenUtils.ScreenLeft, Random.Range(ScreenUtils.ScreenBottom, ScreenUtils.ScreenTop), cameraMainTransformZ));
 		sharkSpawnLocations.Add (new Vector3 (Random.Range(ScreenUtils.ScreenRight, ScreenUtils.ScreenLeft), ScreenUtils.ScreenTop, cameraMainTransformZ));
 
         // Populate sharkSprites dictionnary

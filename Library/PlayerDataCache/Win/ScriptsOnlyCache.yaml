@@ -2,11 +2,15 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CannonBall
+    - ControlsButton
     - Explosion
     - GameAudioSource
     - GameInitializer
     - GameTimer
     - HUD
+    - MainMenuButton
+    - PlayButton
+    - QuitButton
     - Shark
     - SharkSpawner
     - Ship
@@ -19,16 +23,134 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TileDragAndDropManager
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
     - UnityEngine.UI.Text
     com.unity.multiplayer-hlapi.Runtime.dll:
+    - UnityEngine.Networking.NetworkCallbacks
     - UnityEngine.Networking.NetworkIdentity
   sceneClasses:
+    Assets/scenes/Controls.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9700}
+    - Class: 114
+      Script: {instanceID: 9950}
+    - Class: 114
+      Script: {instanceID: 10442}
+    - Class: 114
+      Script: {instanceID: 10456}
+    - Class: 114
+      Script: {instanceID: 10924}
+    - Class: 114
+      Script: {instanceID: 11480}
+    - Class: 114
+      Script: {instanceID: 11926}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/scenes/gameplay.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 92
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9700}
+    - Class: 114
+      Script: {instanceID: 9900}
+    - Class: 114
+      Script: {instanceID: 9950}
+    - Class: 114
+      Script: {instanceID: 10442}
+    - Class: 114
+      Script: {instanceID: 10456}
+    - Class: 114
+      Script: {instanceID: 10492}
+    - Class: 114
+      Script: {instanceID: 10674}
+    - Class: 114
+      Script: {instanceID: 10884}
+    - Class: 114
+      Script: {instanceID: 10924}
+    - Class: 114
+      Script: {instanceID: 11100}
+    - Class: 114
+      Script: {instanceID: 11374}
+    - Class: 114
+      Script: {instanceID: 11480}
+    - Class: 114
+      Script: {instanceID: 11836}
+    - Class: 114
+      Script: {instanceID: 11926}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 124
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/scenes/mainmenu.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -63,8 +185,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
-    - Class: 92
-      Script: {instanceID: 0}
     - Class: 95
       Script: {instanceID: 0}
     - Class: 104
@@ -74,52 +194,46 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9742}
     - Class: 114
-      Script: {instanceID: 9832}
+      Script: {instanceID: 9756}
     - Class: 114
-      Script: {instanceID: 9838}
+      Script: {instanceID: 9834}
     - Class: 114
       Script: {instanceID: 9840}
     - Class: 114
-      Script: {instanceID: 9898}
+      Script: {instanceID: 9842}
     - Class: 114
-      Script: {instanceID: 9910}
+      Script: {instanceID: 9912}
     - Class: 114
-      Script: {instanceID: 9938}
+      Script: {instanceID: 9940}
     - Class: 114
-      Script: {instanceID: 10056}
+      Script: {instanceID: 9950}
     - Class: 114
-      Script: {instanceID: 10160}
+      Script: {instanceID: 10058}
     - Class: 114
-      Script: {instanceID: 10440}
+      Script: {instanceID: 10162}
     - Class: 114
-      Script: {instanceID: 10488}
+      Script: {instanceID: 10442}
     - Class: 114
-      Script: {instanceID: 10668}
+      Script: {instanceID: 10492}
     - Class: 114
-      Script: {instanceID: 10848}
+      Script: {instanceID: 10584}
     - Class: 114
-      Script: {instanceID: 10876}
+      Script: {instanceID: 10844}
     - Class: 114
-      Script: {instanceID: 11092}
+      Script: {instanceID: 10856}
     - Class: 114
-      Script: {instanceID: 11290}
+      Script: {instanceID: 10924}
     - Class: 114
-      Script: {instanceID: 11324}
+      Script: {instanceID: 11298}
     - Class: 114
-      Script: {instanceID: 11366}
+      Script: {instanceID: 11332}
     - Class: 114
-      Script: {instanceID: 11472}
+      Script: {instanceID: 11480}
     - Class: 114
-      Script: {instanceID: 11828}
+      Script: {instanceID: 11926}
     - Class: 114
-      Script: {instanceID: 11918}
-    - Class: 114
-      Script: {instanceID: 11928}
+      Script: {instanceID: 11936}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 124
-      Script: {instanceID: 0}
-    - Class: 128
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
@@ -162,6 +276,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayButton
   - hash:
       serializedVersion: 2
       Hash: 5bd9a19c7b5f76c563418e28f48a561b
@@ -252,18 +372,6 @@ ScriptsOnlyBuild:
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
     className: NetworkTransform
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: UnityEngine.Advertisements.dll
-    namespaceName: UnityEngine.Advertisements
-    className: CallbackExecutor
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: UnityEngine.Advertisements.dll
-    namespaceName: UnityEngine.Advertisements.Editor
-    className: Placeholder
   - hash:
       serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
@@ -386,6 +494,12 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainMenuButton
+  - hash:
+      serializedVersion: 2
       Hash: b8a5e8091ab0b8861d2add371082c5e0
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -414,6 +528,12 @@ ScriptsOnlyBuild:
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
     className: NetworkLobbyManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ControlsButton
   - hash:
       serializedVersion: 2
       Hash: 5887ef1bc706b22b773d253fd443ceef
@@ -474,6 +594,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: RemoteTestResultSender
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: QuitButton
   - hash:
       serializedVersion: 2
       Hash: e0c880c5183eb74891e08a19fc6ee81e
@@ -764,5 +890,7 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 5
   scenePathNames:
+  - Assets/scenes/mainmenu.unity
   - Assets/scenes/gameplay.unity
+  - Assets/scenes/Controls.unity
   playerPath: E:/Google Drive/games/Aaaargh/Build/Aaaargh.exe

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary>
 /// Ship.
@@ -69,8 +70,8 @@ public class Ship : MonoBehaviour {
 		GameObject explosion = (GameObject)Instantiate (Resources.Load ("prefabs/explosion"));
 		explosion.transform.position = transform.position - new Vector3(0, 0.5f, 0);
 		AudioManager.Play (AudioClipName.ShipWreck);
-        GameObject.Instantiate(Resources.Load("prefabs/BackCanvas"));
-		Destroy (gameObject); 
+        GameObject.FindGameObjectWithTag("backButton").GetComponent<Image>().enabled = true;
+        Destroy (gameObject); 
 	}
 
 
