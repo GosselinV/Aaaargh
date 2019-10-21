@@ -1,0 +1,23 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\Shark.cs">
+    <Files>
+      <File FileName="Assets\Resources\audio\GameAudioSource.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\audio\AudioManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\audio\AudioClipName.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Ship.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\CannonBall.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Shark.cs" Line="131" Column="12" />
+      <File FileName="Assets\scripts\SharkSpawner.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\SharkSpriteName.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Timer.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\GameInitializer.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\HUD.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\GameTimer.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
